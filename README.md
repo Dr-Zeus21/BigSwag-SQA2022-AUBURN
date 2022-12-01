@@ -1,6 +1,6 @@
 Big Swag
 Brenden Rice
-Andy Vaughn
+Moe Salaam
 John Mulligan
 
 Add pre-commit file to .git/hooks directory
