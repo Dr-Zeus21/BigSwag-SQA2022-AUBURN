@@ -47,7 +47,14 @@ def prepare_data():
     
     
     
-    se_data = pd.read_csv('data//IST_MIR.csv') 
+    se_data = pd.read_csv('data//IST_MIR.csv')
+
+#   Creates a log to check the loading of the IST_MIR dataset for poisoning attacks.
+#   Outputs a log message with the logname, log level, filename, affected method, and IST_MIR data.
+#   Gives information on data input so that no erroneus data is loaded.
+    log0 = LogHelper.getSQALogger()
+    log0.debug('{} - {} - {}'.format('knn.py', 'prepare_data()', se_data))
+
     print(se_data.shape)
     X = se_data.iloc[:, 2:14]
     y = se_data['defect_status']
