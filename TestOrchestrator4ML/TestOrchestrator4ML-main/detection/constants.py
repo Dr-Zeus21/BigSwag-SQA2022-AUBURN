@@ -18,7 +18,6 @@ TARGETS_KW = 'targets'
 LINE_NO_KW = 'lineno'
 FUNC_CALL_ARG_STR = 'FUNC_CALL_ARG:'
 
-
 TENSOR_LIB = 'tensorflow'
 
 KERAS_LIB = 'keras'
